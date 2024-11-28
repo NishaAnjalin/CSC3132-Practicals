@@ -63,5 +63,5 @@ catch(Exception $e){
 PrintTables ("users",$connect,["uname","uemail"]);
 
  
-//id	name	uname	uemail	upass
+
 ?>
