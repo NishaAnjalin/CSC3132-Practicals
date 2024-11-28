@@ -6,7 +6,6 @@ try{
 	//Query
 	$sql = "SELECT * FROM $tableName";
 
-	//execute the query (call variable,query)
 	$result = mysqli_query($connect,$sql);
 
 	if (mysqli_num_rows($result)>0) {
