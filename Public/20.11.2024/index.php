@@ -3,7 +3,7 @@
 require_once 'dbconf.php';
 
 try{
-	//Query
+	
 	$sql = "SELECT * FROM student";
 
 	//execute the query (call variable,query)
