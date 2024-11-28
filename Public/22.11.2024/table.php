@@ -1,14 +1,15 @@
 <?php
 //get the database connection file
-require_once 'db.php';
-function PrintTable($tableName,$connect){
+require_once 'dbconf.php';
+
 try{
 	//Query
-	$sql = "SELECT * FROM $tableName";
+	$sql = "SELECT * FROM students";
 
 	//execute the query (call variable,query)
 	$result = mysqli_query($connect,$sql);
 
+	//check if data exist in the table
 	if (mysqli_num_rows($result)>0) {
 		//fetch the data from rows
 
@@ -24,7 +25,7 @@ try{
 		}
 		echo "</tr>";
 		while($row = mysqli_fetch_assoc($result)){
-			//print the data in table format
+			
 
 		echo "<tr>";
 		foreach ($row as $key => $value) {
@@ -37,16 +38,10 @@ try{
 	else{
 		echo "No results"; //table is empty
 	}
+	
 
-	}
-
-
-catch(Exception $e){
+}catch(Expection $e){
 	die($e->getMessage());
 }
-}
- printTable("books",$connect);
- printTable("requests",$connect);
- printTable("users",$connect);
 
 ?>
