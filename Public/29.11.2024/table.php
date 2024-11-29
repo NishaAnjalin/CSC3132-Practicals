@@ -6,7 +6,7 @@
 <body>
 
 	<?php
-		require_once 'db.php';	
+		require_once 'dbconf.php';	
 		//insert data into student table
 		try{
 			//Quary
