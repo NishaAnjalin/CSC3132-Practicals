@@ -10,9 +10,6 @@
 
 	require_once 'dbconf.php';	
 	
-		
-	//POST:send the data  
-//ACTION: call the file	
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			//echo "Got the POST request from client";
