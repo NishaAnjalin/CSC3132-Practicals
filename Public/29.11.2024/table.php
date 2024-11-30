@@ -7,36 +7,25 @@
 
 	<?php
 		require_once 'dbconf.php';	
-		//insert data into student table
-		try{
-			//Quary
-			$sql = "INSERT INTO STUDENTS VALUES('2020/asp/8', 'Rohan', 18, 'BMCS')";
-			//execute the quary
-			$result = mysqli_query($connect,$sql);
+		// Insert data into the student table
+		try {
+			// Corrected SQL query with explicit column list
+			$sql = "INSERT INTO student (name, age, gender, course, enrollment_date) 
+			        VALUES ('Alice ', 20, 'Female', 'Computer Science', '2023-08-15')";
+			
+			// Execute the query
+			$result = mysqli_query($connect, $sql);
 
-			if ($result){
+			if ($result) {
 				echo "New student record created successfully";
-			}else{
-				die("Error".mysqli_error($connect));
+			} else {
+				die("Error: " . mysqli_error($connect));
 			}
 
-		} catch(Exception $e){
+		} catch (Exception $e) {
 			die($e->getMessage());
-	}
-/*
-New student record created successfully
-MariaDB [studentdatabase]> select * from students;
-+------------+-------+-----+--------+
-| id         | name  | age | course |
-+------------+-------+-----+--------+
-| 2020/ASP/2 | Nisha |  24 | CSC    |
-| 2020/ASP/6 | john  |  27 | CA     |
-| 2020/asp/8 | Rohan |  18 | BMCS   |
-| 2020/ASP/9 | mary  |  25 | CS     |
-+------------+-------+-----+--------+
-4 rows in set (0.000 sec)
-*/
-?>
+		}
+	?>
 
 </body>
 </html>

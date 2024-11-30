@@ -8,9 +8,9 @@
 <body>
     <h1>Nishanthi Practicals</h1><br><br>
 
-    <a href="Public/20.11.2024/index.php">20.11.2024</a><br>
-    <a href="Public/22.11.2024/index.php">22.11.2024</a><br>
-    <a href="Public/29.11.2024/form.php">29.11.2024</a><br>
+    <a href="table1.php">Table 1</a><br>
+    <a href="table2.php">Table 2</a><br>
+    <a href="table3.php">Table 3</a><br>
 
     
 </body>
