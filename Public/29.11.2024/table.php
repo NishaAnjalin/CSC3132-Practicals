@@ -7,7 +7,6 @@
 
 	<?php
 		require_once 'dbconf.php';	
-		// Insert data into the student table
 		try {
 			// Corrected SQL query with explicit column list
 			$sql = "INSERT INTO student (name, age, gender, course, enrollment_date) 
