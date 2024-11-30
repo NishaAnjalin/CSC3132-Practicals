@@ -4,6 +4,7 @@
 	<title></title>
 </head>
 <body>
+	// file name 
 <form action = "insert.php" method = "POST">
 	<table >
 		<tr >
