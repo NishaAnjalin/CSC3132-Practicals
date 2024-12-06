@@ -1,8 +1,8 @@
 <?php
 //constant variable (variable name, value)
-define('SERVERNAME', 'localhost');
+define('SERVERNAME', '127.0.0.1:3306');
 define('USERNAME', 'root');
-define('PASSWORD', '');
+define('PASSWORD', 'mariadb');
 define('DBNAME', 'company');
 try{
 	
