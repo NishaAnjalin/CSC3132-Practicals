@@ -15,7 +15,7 @@ PrintTable ("employee",$connect);
 
 //create a search form
 //write a function to search the books
-echo $_SERVER['PHP_SELF']; //GET THE FILE NAME
+//echo $_SERVER['PHP_SELF']; //GET THE FILE NAME
 
 ?>
 
