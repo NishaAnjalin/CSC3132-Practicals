@@ -41,7 +41,7 @@ try{
 	}
 
 
-catch(Expection $e){
+catch(Exception $e){
 	die($e->getMessage());
 }
 }
