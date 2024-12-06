@@ -19,7 +19,7 @@ echo $_SERVER['PHP_SELF']; //GET THE FILE NAME
 
 ?>
 
-<form action = "<?php echo $_SERVER['PHP_SELF']?>" method = "GET">
+<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "GET">
 	<table >
 		<tr >
 			<td align=right>Emp_Name: </td>
