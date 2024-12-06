@@ -9,7 +9,7 @@
     <h1>Nishanthi Practicals</h1><br><br>
 
     <a href="gettable.php">Gettable</a><br>
-    <a href="myfunc.php">MyFunction</a><br>
+    
 
 
     
