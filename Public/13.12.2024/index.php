@@ -130,10 +130,10 @@ require_once 'func.php';
                     <tr>
                         <td align="right">Option:</td>
                         <td>
-                        <label>
-                            <input type="radio" name="park" value="alloc" checked onclick="toggleInput(this)"> Allocate
-                            <input type="radio" name="park" value="free" onclick="toggleInput(this)"> Free
-                        </label>
+                            <label>
+                                <input type="radio" name="park" value="alloc" checked>Allocate
+                                <input type="radio" name="park" value="free">Free
+                            </label>
                         </td>
                         <td>
 
@@ -143,7 +143,7 @@ require_once 'func.php';
                         <td>Slot No:</td>
                         <td align="right">
                             <label>
-                                <input type="number" name="slot" placeholder="Enter Slot No">
+                                <input type="number" name="slot">
                             </label>
                         </td>
                         <td>
@@ -159,11 +159,11 @@ require_once 'func.php';
 
                         </td>
                     </tr>
-                    <tr id="vnoLabel" style="display: ;">
+                    <tr>
                         <td>Vehicle No:</td>
                         <td align="right">
                             <label>
-                                <input type="text" name="vno" placeholder="Enter Vehicle No">
+                                <input type="text" name="vno">
                             </label>
                         </td>
                         <td>
@@ -235,16 +235,5 @@ if($_SERVER['REQUEST_METHOD']=='POST' && $_POST['slot']!=''){
 
 }
 ?>
-
-<script>
-        function toggleInput(radio) {
-            const vnoLabel = document.getElementById('vnoLabel');
-            if (radio.value === "free") {
-                vnoLabel.style.display = "none"; // Hide input
-            } else {
-                vnoLabel.style.display = ""; // Show input
-            }
-        }
-</script>
 </body>
 </html>
